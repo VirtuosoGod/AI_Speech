@@ -1,4 +1,7 @@
-# Fine tuning "bert-base-cased" to create "Wizard007Bond/bert-finetuned-ner"
+# This script fine-tunes the "bert-base-cased" model to create "Wizard007Bond/bert-finetuned-ner".
+# The fine-tuned model is saved to Hugging Face's model hub.
+# You can use the pre-trained model "Wizard007Bond/bert-finetuned-ner" directly in the code .
+# There is no need to re-run this script to train the model again if you only need to use it.
 
 from datasets import load_dataset
 from transformers import AutoTokenizer, TFAutoModelForTokenClassification, DataCollatorForTokenClassification, create_optimizer
